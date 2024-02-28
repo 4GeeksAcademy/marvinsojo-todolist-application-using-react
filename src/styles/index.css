@@ -1,4 +1,3 @@
-
 /* 
 
     You can write your own styles here...
@@ -10,3 +9,16 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.task-in,
+.task-out {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+.task-body {
+  border: solid rgb(217, 224, 226);
+}
+.task-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 6rem;
+  color: rgb(217, 224, 226);
+}
