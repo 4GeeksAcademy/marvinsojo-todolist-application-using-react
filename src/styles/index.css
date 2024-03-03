@@ -9,16 +9,36 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-.task-in,
-.task-out {
+.task-in{
+  font-size: x-large;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-weight: 400;
+}
+.task-out {
+  height: auto;
+  font-size: x-large;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  word-wrap: break-word
 }
 .task-body {
   border: solid rgb(217, 224, 226);
 }
 .task-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 6rem;
-  color: rgb(217, 224, 226);
+  color: lightsteelblue;
 }
+.efecto-pagina-2,
+.efecto-pagina-3 {
+  border: solid rgb(217, 224, 226);
+}
+@media (hover: hover){
+.task-body-out:hover{
+    background-color: lightgray;
+}
+}
+@media (hover: hover){
+  .delete:hover{
+      background-color: lightsteelblue;
+  }
+  }
