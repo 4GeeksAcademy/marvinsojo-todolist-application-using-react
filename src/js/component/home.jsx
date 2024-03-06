@@ -15,6 +15,7 @@ const Home = () => {
           done: false,
         },
       ]);
+      event.target.value = "";
     }
 
     setTask(event.target.value);
@@ -38,17 +39,14 @@ const Home = () => {
               <input
                 className="task-in border-0 form-control px-3"
                 type="text"
-                placeholder=""
+                placeholder= "task"
                 onKeyUp={(evt) => handleTask(evt)}
               />
             </div>
 
             {tasksList.map((toDo, index) => {
               return (
-                <div
-                  className="task-body-out row mx-1 my-2 py-2"
-                  key={index}
-                >
+                <div className="task-body-out row mx-1 my-2 py-2" key={index}>
                   <div className="task-out border-0 text-body-light col-md-10">
                     {toDo.label}
                   </div>
