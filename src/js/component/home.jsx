@@ -7,7 +7,7 @@ const Home = () => {
   const [tasksList, setTasksList] = useState([]);
 
   const handleTask = (event) => {
-    if (event.key == "Enter") {
+    if (event.key == "Enter" && task.trim() !== "") {
       setTasksList([
         ...tasksList,
         {
